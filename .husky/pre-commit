@@ -1,6 +1,7 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
+echo "pre commit"
 yarn lint
-yarn test
+# yarn test
 # yarn test:e2e
