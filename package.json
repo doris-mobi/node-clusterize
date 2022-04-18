@@ -1,0 +1,28 @@
+{
+  "name": "node-clusterize",
+  "version": "1.0.0",
+  "description": "enables the creation of child processes (workers) that run simultaneously and share the same server port",
+  "main": "index.js",
+  "repository": "https://github.com/doris-mobi/node-clusterize",
+  "author": "vmartins@doris.mobi",
+  "license": "MIT",
+  "scripts": {
+    "build:types": "tsc",
+    "build:js": "babel ./src --out-dir ./dist --extensions \".ts\" --source-maps inline",
+    "build": "yarn build:types && yarn build:js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
+    "@types/node": "^17.0.25",
+    "babel-plugin-root-import": "^6.6.0",
+    "typescript": "^4.6.3"
+  },
+  "engines": {
+    "node": ">= 16.0.0"
+  }
+}
