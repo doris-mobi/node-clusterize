@@ -1,14 +1,18 @@
-import cluster, { Cluster } from 'cluster'
+import * as cluster from 'cluster'
 import * as os from 'os'
 
 const numCPUs = os.cpus().length
 
 export class ClusterService {
-  static clusterInstance: Cluster = cluster
+  private static _clusterInstance: any = cluster
+
+  private static get clusterInstance(): cluster.Cluster {
+    return ClusterService._clusterInstance
+  }
 
   static clusterize(callback: () => void): void {
     if (this.clusterInstance.isPrimary) {
-      console.log(`Master server started on ${process.pid}`)
+      console.log(`Primary server started on ${process.pid}`)
 
       for (let i = 0; i < numCPUs; i++) {
         this.clusterInstance.fork()

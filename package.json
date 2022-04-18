@@ -2,23 +2,26 @@
   "name": "node-clusterize",
   "version": "1.0.0",
   "description": "enables the creation of child processes (workers) that run simultaneously and share the same server port",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/types.d.ts",
   "repository": "https://github.com/doris-mobi/node-clusterize",
   "author": "vmartins@doris.mobi",
   "license": "MIT",
   "scripts": {
-    "build:types": "tsc",
-    "build:js": "babel ./src --out-dir ./dist --extensions \".ts\" --source-maps inline",
-    "build": "yarn build:types && yarn build:js",
-    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix"
+    "prebuild": "rimraf ./dist",
+    "build": "parcel build src/index.ts",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.6",
     "@babel/core": "^7.17.9",
-    "@babel/preset-env": "^7.16.11",
-    "@babel/preset-typescript": "^7.16.7",
     "@commitlint/cli": "^16.2.3",
     "@commitlint/config-conventional": "^16.2.1",
+    "@parcel/packager-ts": "2.4.1",
+    "@parcel/transformer-typescript-types": "2.4.1",
+    "@types/jest": "^27.4.1",
     "@types/node": "^17.0.25",
     "@typescript-eslint/eslint-plugin": "^5.20.0",
     "@typescript-eslint/parser": "^5.20.0",
@@ -27,10 +30,14 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.4",
+    "jest": "^27.5.1",
+    "parcel": "^2.4.1",
     "prettier": "^2.6.2",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^27.1.4",
     "typescript": "^4.6.3"
   },
   "engines": {
-    "node": ">= 16.0.0"
+    "node": ">= 14"
   }
 }
