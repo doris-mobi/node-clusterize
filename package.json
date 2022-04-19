@@ -1,8 +1,9 @@
 {
   "name": "node-clusterize",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "enables the creation of child processes (workers) that run simultaneously and share the same server port",
   "main": "dist/index.js",
+  "module": "dist/module.js",
   "types": "dist/types.d.ts",
   "repository": "https://github.com/doris-mobi/node-clusterize",
   "author": "vmartins@doris.mobi",
@@ -12,7 +13,8 @@
     "build": "parcel build src/index.ts",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "release": "standard-version"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.6",
@@ -33,10 +35,14 @@
     "parcel": "^2.4.1",
     "prettier": "^2.6.2",
     "rimraf": "^3.0.2",
+    "standard-version": "^9.3.2",
     "ts-jest": "^27.1.4",
     "typescript": "^4.6.3"
   },
   "engines": {
     "node": ">= 14"
+  },
+  "dependencies": {
+    "node-clusterize": "^1.0.0"
   }
 }
