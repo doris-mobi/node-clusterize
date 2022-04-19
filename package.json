@@ -19,7 +19,7 @@
     "test:watch": "jest --watch",
     "prerelease": "yarn lint && yarn test && yarn build",
     "postrelease": "git push origin main --follow-tags",
-    "release": "standard-version -- --no-verify"
+    "release": "standard-version --no-verify"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.6",
