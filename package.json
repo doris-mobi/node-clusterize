@@ -1,6 +1,6 @@
 {
   "name": "@doris.mobi/node-clusterize",
-  "version": "1.1.23",
+  "version": "1.1.24",
   "description": "enables the creation of child processes (workers) that run simultaneously and share the same server port",
   "main": "dist/index.js",
   "module": "dist/module.js",
@@ -12,7 +12,6 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "prerelease": "yarn lint && yarn test && yarn build",
-    "postrelease": "git push origin main --follow-tags",
     "release": "standard-version --no-verify"
   },
   "devDependencies": {
