@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.25](https://github.com/doris-mobi/node-clusterize/compare/v1.1.24...v1.1.25) (2022-04-19)
+
+
+### Bug Fixes
+
+* undo postrelease script ([a6490b7](https://github.com/doris-mobi/node-clusterize/commit/a6490b78e2e1294006ca8e4cc984a63f1634e775))
+
 ### [1.1.24](https://github.com/doris-mobi/node-clusterize/compare/v1.1.23...v1.1.24) (2022-04-19)
 
 
