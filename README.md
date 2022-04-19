@@ -5,9 +5,17 @@ Enables the creation of child processes (workers) that run simultaneously and sh
 ## Installation
 
 ```shell
-$ yarn add node-clusterize
+$ yarn add @doris.mobi/node-clusterize
 ```
 
 ## Usage
 
-...WIP
+```typescript
+import { ClusterService } from '@doris.mobi/node-clusterize'
+
+const application = () => {
+  // your node application logic
+}
+
+ClusterService.clusterize(application)
+```

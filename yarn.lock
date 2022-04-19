@@ -466,6 +466,11 @@
   dependencies:
     "@cspotcode/source-map-consumer" "0.8.0"
 
+"@doris.mobi/node-clusterize@^1.1.25":
+  version "1.1.25"
+  resolved "https://registry.yarnpkg.com/@doris.mobi/node-clusterize/-/node-clusterize-1.1.25.tgz#26b2ffe478d00d93e3973679732063c4cb865bfe"
+  integrity sha512-x/l3kzvXrQrFcbHm87dCSDas2weAysNl0YMhYhgJnNv5Ark5eRm0sO47N68q2cpZsON8fyCX9Rn+vV8Mj3K0SQ==
+
 "@eslint/eslintrc@^1.2.1":
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-1.2.1.tgz#8b5e1c49f4077235516bc9ec7d41378c0f69b8c6"
