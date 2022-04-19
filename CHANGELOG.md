@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.18](https://github.com/doris-mobi/node-clusterize/compare/v1.1.17...v1.1.18) (2022-04-19)
+
+
+### Bug Fixes
+
+* change isPrimary to isMaster to support node v14+ ([e16057a](https://github.com/doris-mobi/node-clusterize/commit/e16057a34dcf0b9f4cee0f52a1ffe0d3e9e2da23))
+
 ### [1.1.17](https://github.com/doris-mobi/node-clusterize/compare/v1.1.16...v1.1.17) (2022-04-19)
 
 ### [1.1.16](https://github.com/doris-mobi/node-clusterize/compare/v1.1.15...v1.1.16) (2022-04-19)
