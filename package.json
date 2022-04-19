@@ -1,6 +1,6 @@
 {
   "name": "node-clusterize",
-  "version": "1.1.21",
+  "version": "1.1.22",
   "description": "enables the creation of child processes (workers) that run simultaneously and share the same server port",
   "main": "dist/index.js",
   "module": "dist/module.js",
