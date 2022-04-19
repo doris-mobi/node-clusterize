@@ -14,17 +14,9 @@ module.exports = {
     node: true,
     jest: true,
   },
-  ignorePatterns: [
-    '**/*.d.ts',
-    '.eslintrc.js',
-    'commitlint.config.js',
-    'jest.config.ts',
-  ],
+  ignorePatterns: ['.eslintrc.js', 'commitlint.config.js', 'jest.config.ts'],
   rules: {
     'prettier/prettier': ['error', {}, { usePrettierrc: true }],
-    '@typescript-eslint/interface-name-prefix': 'off',
-    '@typescript-eslint/explicit-function-return-type': 'off',
-    '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
   },
 }

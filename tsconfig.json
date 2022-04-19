@@ -10,5 +10,5 @@
     "isolatedModules": true,
     "types": ["node", "jest"]
   },
-  "extends": "./tsconfig.paths.json"
+  "include": ["src"]
 }
