@@ -51,7 +51,5 @@
   "files": [
     "dist"
   ],
-  "dependencies": {
-    "@doris.mobi/node-clusterize": "^1.1.25"
-  }
+  "dependencies": {}
 }
