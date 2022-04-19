@@ -8,12 +8,16 @@
   "repository": "https://github.com/doris-mobi/node-clusterize",
   "author": "vmartins@doris.mobi",
   "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "prebuild": "rimraf ./dist",
     "build": "parcel build src/index.ts",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "test": "jest",
     "test:watch": "jest --watch",
+    "prerelease": "yarn lint && yarn test && yarn build",
     "release": "standard-version"
   },
   "devDependencies": {
