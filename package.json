@@ -18,6 +18,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "prerelease": "yarn lint && yarn test && yarn build",
+    "postrelease": "git push origin main --follow-tags",
     "release": "standard-version"
   },
   "devDependencies": {
