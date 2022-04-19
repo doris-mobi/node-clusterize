@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.11](https://github.com/doris-mobi/node-clusterize/compare/v1.1.1...v1.1.11) (2022-04-19)
+
+
+### Bug Fixes
+
+* **husky:** move yarn release to post-commit hook ([e59f25e](https://github.com/doris-mobi/node-clusterize/commit/e59f25ed3ef3527586f69129ba441549b8eb76b5))
+* **husky:** move yarn test and release to pre-push hook ([2239ded](https://github.com/doris-mobi/node-clusterize/commit/2239ded14dfb203691b26317950c7b22f30425ea))
+
 ### [1.1.10](https://github.com/doris-mobi/node-clusterize/compare/v1.1.1...v1.1.10) (2022-04-19)
 
 
