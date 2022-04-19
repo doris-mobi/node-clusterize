@@ -11,7 +11,7 @@ export class ClusterService {
   }
 
   static clusterize(callback: () => void): void {
-    if (this.clusterInstance.isPrimary) {
+    if (this.clusterInstance.isMaster) {
       console.log(`Primary server started on ${process.pid}`)
 
       for (let i = 0; i < numCPUs; i++) {

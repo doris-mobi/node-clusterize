@@ -25,8 +25,8 @@ describe('The cluster', () => {
     mockClusterOn.mockClear()
   })
 
-  it('should execute clusterize if isPrimary', () => {
-    clusterInstance.default.isPrimary = true
+  it('should execute clusterize if isMaster', () => {
+    clusterInstance.default.isMaster = true
 
     ClusterService.clusterize(mockClusterizeCallback)
 
@@ -35,7 +35,7 @@ describe('The cluster', () => {
   })
 
   it('should handle an "on(\'exit\')" event', () => {
-    clusterInstance.default.isPrimary = true
+    clusterInstance.default.isMaster = true
 
     const mockExitEventCallback = jest.fn((event, callback) =>
       callback({ process: { pid: 1234 } }),
@@ -54,8 +54,8 @@ describe('The cluster', () => {
     spyClusterIntanceOn.mockRestore()
   })
 
-  it('should execute callback if not isPrimary', () => {
-    clusterInstance.default.isPrimary = false
+  it('should execute callback if not isMaster', () => {
+    clusterInstance.default.isMaster = false
 
     ClusterService.clusterize(mockClusterizeCallback)
 
@@ -65,7 +65,7 @@ describe('The cluster', () => {
   })
 
   it('should call on with exit successfully', () => {
-    clusterInstance.default.isPrimary = true
+    clusterInstance.default.isMaster = true
 
     ClusterService.clusterize(mockClusterizeCallback)
     clusterInstance.disconnect()
